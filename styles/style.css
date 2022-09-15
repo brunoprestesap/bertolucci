@@ -10,10 +10,18 @@ p, a, h2, h3 {
 }
 
 /* Heading */
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
 
 .heading-top {
   background-color: #1C0A00;
   color: #CC9544;
+  margin-bottom: 5rem;
 }
 
 .container-fluid {
@@ -27,7 +35,7 @@ p, a, h2, h3 {
 .logo {
   width: 35%;
   height: auto;
-  margin-bottom:3rem;
+  margin-bottom: 3rem;
 }
 
 .logo-text {
@@ -42,17 +50,14 @@ p, a, h2, h3 {
 }
 
 /* marketing secction */
-
-.container {
-  margin: auto auto;
-  padding: 3rem 5rem;
-}
-
-#resources {
-  margin-bottom: 3rem;
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .img-resources {
+  width: 12rem;
+  height: 12rem;
   border-radius: 100%;
   margin-top: 3%;
   margin-bottom: 7%;
@@ -65,18 +70,17 @@ p, a, h2, h3 {
 }
 
 .marketing-p {
-  margin: 0 3rem  1.5rem;
+  margin: 0 3rem 1.5rem;
 }
 
 /* Depoimentos */
-
 .featurette-divider {
-  margin: 5rem 0;
+  margin: 2rem 0;
 }
 
 .featurette-heading {
-  margin-top: 7rem;
   text-align: left;
+  /* letter-spacing: 0.125rem; */
 }
 
 .lead {
@@ -84,8 +88,64 @@ p, a, h2, h3 {
 }
 
 .img-depoimento {
-  width: 225px;
-  height: 200px;
+  width: 350px;
+  height: 350px;
   border-radius: 100%;
   margin: 7% auto;
 }
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 40em) {
+
+  /* Bump up size of carousel content */
+  .logo-text {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 5rem;
+  }
+
+  .logo {
+    width: 400px;
+    height: 400px;
+    margin-bottom: 3rem;
+  }
+}
+
+  @media (max-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+
+    .logo {
+      width: 350px;
+      height: 325px;
+      margin-bottom: 3rem;
+    }
+
+    .fw-normal {
+      font-size: 2rem;
+    }
+
+    .marketing-p {
+      font-size: 1.2rem;
+    }
+
+    .featurette-heading {
+      font-size: 1.5rem;
+    }
+  }
